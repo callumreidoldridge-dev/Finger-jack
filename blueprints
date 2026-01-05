@@ -1,0 +1,26 @@
+YourProject/
+├── Config/                     // standard UE5 config
+├── Content/
+│   ├── Blackjack/
+│   │   ├── Blueprints/
+│   │   │   ├── BP_BlackjackGameMode.uasset
+│   │   │   ├── BP_BlackjackPlayer.uasset
+│   │   │   ├── BP_Table.uasset
+│   │   │   ├── BP_Card.uasset
+│   │   │   ├── BP_Chip.uasset
+│   │   │   └── BP_FingerLoss.uasset   // spawns FX + cuts finger
+│   │   ├── Maps/
+│   │   │   └── L_Blackjack.umap
+│   │   ├── Materials/
+│   │   └── VFX/                     // simple blood Niagara System
+├── Source/
+│   └── Blackjack/
+│       ├── Blackjack.Build.cs
+│       ├── Blackjack.cpp
+│       ├── Blackjack.h
+│       ├── Card.h / .cpp
+│       ├── Deck.h / .cpp
+│       ├── BlackjackPlayer.h / .cpp
+│       ├── BlackjackGameMode.h / .cpp
+│       └── FingerLossComponent.h / .cpp
+└── README.md
