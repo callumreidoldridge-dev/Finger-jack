@@ -8,3 +8,13 @@ public:
     UPROPERTY(EditAnywhere)
     bool bIsAce;
 };
+TArray<ACard*> Cards;
+void Shuffle();
+ACard* Pull();
+int32 FingersLeft = 5;
+void LoseFinger();          // decrements, calls BlueprintImplementable
+UFUNCTION(BlueprintImplementableEvent, Category="Gore")
+void OnFingerLost(int32 Remaining);
+void EvaluateRound();        // normal BJ rules
+void PlayerBust(APlayerController* PC); // -> LoseFinger()
+
