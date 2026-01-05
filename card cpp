@@ -1,0 +1,10 @@
+UCLASS()
+class BLACKJACK_API ACard : public AActor
+{
+    GENERATED_BODY()
+public:
+    UPROPERTY(EditAnywhere)
+    int32 Value;            // 1-11 (no royalty in this variant)
+    UPROPERTY(EditAnywhere)
+    bool bIsAce;
+};
